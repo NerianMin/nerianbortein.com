@@ -1,0 +1,24 @@
+{
+  "name": "artemeesenin.github.io",
+  "version": "1.0.0",
+  "description": "CV",
+  "homepage": "https://artemeesenin.github.io",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run scss",
+    "dev": "npm run scss -- -wr",
+    "scss": "node-sass scss/ -o css/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArtemeeSenin/artemeesenin.github.io.git"
+  },
+  "author": "Artem Senin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArtemeeSenin/artemeesenin.github.io/issues"
+  },
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  }
+}
