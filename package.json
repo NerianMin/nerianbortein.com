@@ -5,9 +5,9 @@
   "homepage": "https://artemeesenin.github.io",
   "main": "index.js",
   "scripts": {
-    "build": "npm run scss",
-    "dev": "npm run scss -- -wr",
-    "scss": "node-sass scss/ -o css/"
+    "build": "npm run scss -- --output-style compressed",
+    "dev": "npm run scss -- -rw",
+    "scss": "node-sass scss/main.scss -o css/"
   },
   "repository": {
     "type": "git",
