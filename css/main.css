@@ -1,1 +1,15 @@
-html{--base-font-size: 14px;--primary-text-color: #000}html{font-size:var(--base-font-size)}body{font-family:'Montserrat', 'Helvetica', 'Arial', sans-serif;font-size:1rem;color:var(--primary-text-color)}h1{font-family:sans-serif}
+html {
+  --base-font-size: 14px;
+  --primary-text-color: #000;
+  --primary-background-color: #f2f5fa; }
+
+html {
+  font-size: var(--base-font-size); }
+
+body {
+  font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
+  font-size: 1rem;
+  color: var(--primary-text-color); }
+
+h1 {
+  font-family: sans-serif; }
