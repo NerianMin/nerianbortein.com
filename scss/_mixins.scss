@@ -1,5 +1,7 @@
+@import "scss-variables";
+
 @mixin light-drop-shadow() {
   box-shadow:
-          0 20px 60px 0 rgba(186,200,227,0.1),
-          0 16px 36px 0 rgba(186,200,227,0.3);
+          0 20px 60px 0 adjust-color($primary-drop-shadow-color, $alpha: -0.9),
+          0 16px 36px 0 adjust-color($primary-drop-shadow-color, $alpha: -0.7);
 }

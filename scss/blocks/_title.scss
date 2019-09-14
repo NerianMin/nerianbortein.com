@@ -1,0 +1,35 @@
+@import '../scss-variables';
+
+.title {
+  display: flex;
+  margin-bottom: 34px;
+
+  &__credentials {
+    flex-grow: 1;
+  }
+
+  &__name {
+    margin: 0 0 18px;
+    font-size: 3.25rem;
+    line-height: 3.5rem;
+    font-weight: $font-weight-bold;
+    text-transform: uppercase;
+    letter-spacing: $letter-spacing;
+  }
+
+  &__position {
+    margin: 0;
+    font-size: 1.125rem;
+    font-weight: $font-weight-light;
+    color: var(--light-text-color);
+  }
+
+  &__image {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 45%;
+    filter: grayscale(.25) contrast(130%) saturate(120%);
+  }
+}

@@ -1,5 +1,12 @@
+@import '../scss-variables';
 @import '../mixins';
 
 .container {
+  padding: 45px 68px;
+  margin: 50px auto 80px;
+  box-sizing: border-box;
+  max-width: $container-max-width;
+  border-radius: 6px;
+  background: var(--primary-background-color);
   @include light-drop-shadow();
 }

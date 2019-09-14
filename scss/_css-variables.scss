@@ -1,5 +1,10 @@
+@import "scss-variables";
+
 html {
-    --base-font-size: 14px;
+    --base-font-size: 16px;
     --primary-text-color: #000;
-    --primary-background-color: #f2f5fa;
+    --light-text-color: #494949;
+    --x-light-text-color: #5d5d5d;
+    --primary-background-color: #fff;
+    --secondary-background-color: #f2f5fa;
 }
