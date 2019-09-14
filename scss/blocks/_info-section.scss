@@ -14,7 +14,7 @@
   }
 
   &__heading {
-    margin: 0 0 28px;
+    margin: 0 0 1.75rem;
     font-size: 1.375rem;
     line-height: 1.5rem;
     font-weight: $font-weight-bold;
@@ -32,21 +32,39 @@
   }
 
   &__sub-heading {
-    margin: 0 0 8px 0;
+    margin: 0 0 .5rem 0;
     font-size: .875rem;
     line-height: 1rem;
     text-transform: uppercase;
   }
 
-  &__text {
-    margin-bottom: 20px;
+  &__time {
+    font-size: .875rem;
+    margin-bottom: 1.25rem;
 
-    a, p {
-      margin: 0;
-      display: block;
-      font-size: .875rem;
-      line-height: 1rem;
-      text-decoration: none;
+    &--small-indent {
+      margin-bottom: .5rem;
+    }
+  }
+
+  &__duration {
+    font-size: .75rem;
+    color: var(--x-light-text-color);
+  }
+
+  &__text {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    color: var(--light-text-color);
+    font-size: .875rem;
+    line-height: 1rem;
+
+    &--long {
+      color: var(--x-light-text-color);
+      line-height: 1.5rem;
+    }
+
+    a {
       color: var(--light-text-color);
     }
 
@@ -62,6 +80,11 @@
     font-size: .875rem;
     line-height: 1rem;
     color: var(--x-light-text-color);
+  }
+
+  &__contact-link {
+    display: block;
+    text-decoration: none;
   }
 
   &__list {

@@ -1,3 +1,4 @@
+@import "mixins";
 html {
     font-size: var(--base-font-size);
 }
@@ -7,4 +8,11 @@ body {
   font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
   font-size: .875rem;
   color: var(--primary-text-color);
+}
+
+@include print() {
+  html,
+  body {
+    width: 1000px;
+  }
 }

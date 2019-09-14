@@ -22,11 +22,11 @@
         <h3 class="info-section__heading">Info</h3>
         <h4 class="info-section__sub-heading">Phone</h4>
         <div class="info-section__text">
-          <a href="tel:+79119042477">+79119042477</a>
+          <a href="tel:+79119042477" class="info-section__contact-link">+79119042477</a>
         </div>
         <h4 class="info-section__sub-heading">Email</h4>
         <div class="info-section__text">
-          <a href="mailto:artemee.senin@yandex.ru">artemee.senin@yandex.ru</a>
+          <a href="mailto:artemee.senin@yandex.ru" class="info-section__contact-link">artemee.senin@yandex.ru</a>
         </div>
       </section>
       <section class="info-section info-section--no-border">
@@ -53,6 +53,8 @@
           <li>SCSS, SASS</li>
           <li>JavaScript</li>
           <li>Git</li>
+          <li>Pug (Jade)</li>
+          <li>Handlebars</li>
         </ul>
         <h4 class="info-section__sub-heading">Skillful</h4>
         <ul class="info-section__list">
@@ -73,6 +75,7 @@
           <li>PHP</li>
           <li>MySQL (Maria DB)</li>
           <li>Nginx</li>
+          <li>Firebase</li>
         </ul>
         <h4 class="info-section__sub-heading">Had experience with</h4>
         <ul class="info-section__list">
@@ -107,8 +110,11 @@
     <div class="experience-info">
       <section class="info-section">
         <h3 class="info-section__heading">Profile</h3>
-        <div class="info-section__text">
-          <p>Dev</p>
+        <div class="info-section__text info-section__text--long">
+          <p>In my free time I read books, articles, watch talks about web development and anything connected with it.</p>
+          <p>I love to learn new things. Regularly visit conferences and meetups like PiterJS, PiterCSS, follow the news on youtube channels of HolyJS, Frontend Conf, read papers on Habr and Medium.</p>
+          <p>I have experience with JavaScript/Typescript, React, Angular.</p>
+          <p>Also having fun working with Arch linux and Vim.</p>
         </div>
       </section>
       <section class="info-section">
@@ -117,40 +123,48 @@
         <div class="info-section__time">
           <time class="info-section__date">Dec 2018</time>
           <span> &ndash; </span>
-          <time class=info-section__date">Present</time>
+          <time class="info-section__date">Present</time>
         </div>
-        <div class="info-section__text">
-          <p>Working on complex SPA for mShop</p>
+        <div class="info-section__text info-section__text--long">
+          <p>Working at T-Systems SPb on mShop project based on Angular framework.</p>
+          <p>I am taking part in the development of pencil selling SPA for Deutsche Telekom.</p>
+          <p>This project uses complex logic on front-end due to bad internet connection in shops where it is used. Legacy code requires constant refactoring and technical debt reduction.</p>
         </div>
         <h4 class="info-section__sub-heading">Tutor, Epic Skills</h4>
         <div class="info-section__time">
           <time class="info-section__date">May 2018</time>
           <span> &ndash; </span>
-          <time class=info-section__date">Jun 2019</time>,
+          <time class="info-section__date">Jun 2019</time>,
           <span class="info-section__duration" aria-label="Duration of employment">1 yr 3 mos</span>
         </div>
-        <div class="info-section__text">
-          <p>Tutoring</p>
+        <div class="info-section__text info-section__text--long">
+          <p>Mentoring students of this internet technologies school.</p>
+        </div>
+        <h4 class="info-section__sub-heading">Teacher, ITMO University, Children Computer Club</h4>
+        <div class="info-section__time">
+          <time class="info-section__date">Sep 2016</time>
+          <span> &ndash; </span>
+          <time class="info-section__date">Jun 2019</time>,
+          <span class="info-section__duration" aria-label="Duration of employment">3 yrs</span>
+        </div>
+        <div class="info-section__text info-section__text--long">
+          <p>Courses for children about web development basics.</p>
+          <p>I taught two courses: the basics of Frontend and the basics of Backend development.</p>
         </div>
         <h4 class="info-section__sub-heading">Junior Front-end developer, Bandito</h4>
         <div class="info-section__time">
           <time class="info-section__date">Nov 2016</time>
           <span> &ndash; </span>
-          <time class=info-section__date">Sep 2017</time>,
+          <time class="info-section__date">Sep 2017</time>,
           <span class="info-section__duration" aria-label="Duration of employment">10 mos</span>
         </div>
-        <div class="info-section__text">
-          <p>HTML, CSS, JavaScript, jQuery</p>
-        </div>
-        <h4 class="info-section__sub-heading">Teacher, ITMO University</h4>
-        <div class="info-section__time">
-          <time class="info-section__date">Sep 2016</time>
-          <span> &ndash; </span>
-          <time class=info-section__date">Jun 2019</time>,
-          <span class="info-section__duration" aria-label="Duration of employment">3 yrs</span>
-        </div>
-        <div class="info-section__text">
-          <p>Courses for children on web dev</p>
+        <div class="info-section__text info-section__text--long">
+          <p>At this design studio my responsibilities included working on landing pages, corporate sites.</p>
+          <p>I was working with HTML, CSS, SASS, Pure JavaScript. Some projects were handed over after freelancers and required some refinement and refactoring.</p>
+          <p>Also I introduced git into developing process.</p>
+          <p>I had experience with installing web-sites on WordPress and supporting them.</p>
+          <p>Here are some examples of projects I took part in: <a href="https://adhoc.su/">ADhoc</a>, <a href="https://zverinus.ru/">Zverinus</a>,
+            <a href="https://bandito.band/">Bandito</a>.</p>
         </div>
       </section>
       <section class="info-section">
@@ -169,26 +183,26 @@
       <section class="info-section">
         <h3 class="info-section__heading">Education</h3>
         <h4 class="info-section__sub-heading">ITMO University</h4>
-        <p class=info-section__text">Master, Web-technologies, 4.87</p>
-        <div class="info-section__time">
+        <div class="info-section__time info-section__time--small-indent">
           <time class="info-section__date">2017</time>
-          <span> – </span>
-          <time class=info-section__date">2019</time>
+          <span> &ndash; </span>
+          <time class="info-section__date">2019</time>
         </div>
+        <p class="info-section__text">Master, Web-technologies, 4.87</p>
         <h4 class="info-section__sub-heading">ITMO University</h4>
-        <p class=info-section__text">Bachelor, Computer graphics teacher, 4.73</p>
-        <div class="info-section__time">
+        <div class="info-section__time info-section__time--small-indent">
           <time class="info-section__date">2013</time>
-          <span> – </span>
-          <time class=info-section__date">2017</time>
+          <span> &ndash; </span>
+          <time class="info-section__date">2017</time>
         </div>
+        <p class="info-section__text">Bachelor, Computer graphics teaching, 4.73</p>
       </section>
       <section class="info-section">
         <h3 class="info-section__heading">Public speaking</h3>
         <h4 class="info-section__sub-heading">Vim: выход есть, пути назад нет</h4>
-        <p class=info-section__text">PiterCSS meetup #31 <a href="https://medium.com/pitercss-meetup/31-f8cc85833351">Slides</a></p>
+        <p class="info-section__text">PiterCSS meetup #31 <a href="https://medium.com/pitercss-meetup/31-f8cc85833351">Slides</a></p>
         <h4 class="info-section__sub-heading">Процесс визуализации. Стили и спецификация. Flexbox & Grid. Препроцессоры</h4>
-        <p class=info-section__text">Front-end school #3, T-Systems <a href="https://docs.google.com/presentation/d/1i7vd9sZrXfFF61tQuKhfF8e9pqDHQZkIwEGwLkBL5J4/edit?usp=sharing">Slides</a></p>
+        <p class="info-section__text">Front-end school #3, T-Systems <a href="https://docs.google.com/presentation/d/1i7vd9sZrXfFF61tQuKhfF8e9pqDHQZkIwEGwLkBL5J4/edit?usp=sharing">Slides</a></p>
       </section>
     </div>
   </main>
