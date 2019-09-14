@@ -1,8 +1,8 @@
-@import '../scss-variables';
+@import "../scss-variables";
+@import "../mixins";
 
 .title {
   grid-area: title;
-  display: flex;
 
   &__credentials {
     flex-grow: 1;
@@ -18,8 +18,9 @@
   }
 
   &__position {
-    margin: 0;
+    margin: 0 0 18px;
     font-size: 1.125rem;
+    line-height: 1.25rem;
     font-weight: $font-weight-light;
     color: var(--light-text-color);
   }
@@ -31,5 +32,15 @@
     object-fit: cover;
     object-position: 45%;
     filter: grayscale(.25) contrast(130%) saturate(120%);
+  }
+}
+
+@include going-large($breakpoint-x-small) {
+  .title {
+    display: flex;
+
+    &__position {
+      margin: 0;
+    }
   }
 }

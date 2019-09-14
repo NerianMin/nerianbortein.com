@@ -1,0 +1,88 @@
+@import "../scss-variables";
+@import "../mixins";
+
+.info-section {
+  margin-bottom: $spacing;
+
+  &:last-child {
+    margin-bottom: 80px;
+  }
+
+  & + & {
+    padding-top: $spacing;
+    border-top: $border;
+  }
+
+  &__heading {
+    margin: 0 0 28px;
+    font-size: 1.375rem;
+    line-height: 1.5rem;
+    font-weight: $font-weight-bold;
+    text-transform: uppercase;
+    letter-spacing: $letter-spacing;
+
+    &:after {
+      content: '';
+      display: block;
+      height: 4px;
+      width: $spacing;
+      background-color: #000;
+      margin-top: 8px;
+    }
+  }
+
+  &__sub-heading {
+    margin: 0 0 8px 0;
+    font-size: .875rem;
+    line-height: 1rem;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    margin-bottom: 20px;
+
+    a, p {
+      margin: 0;
+      display: block;
+      font-size: .875rem;
+      line-height: 1rem;
+      text-decoration: none;
+      color: var(--light-text-color);
+    }
+
+    p {
+      margin-top: 0;
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__link {
+    display: block;
+    margin-bottom: 1rem;
+    font-size: .875rem;
+    line-height: 1rem;
+    color: var(--x-light-text-color);
+  }
+
+  &__list {
+    margin: .5rem 0 1rem 0;
+    padding-left: 1rem;
+
+    li {
+      margin: .25rem;
+    }
+  }
+}
+
+@include going-large($breakpoint-medium) {
+  .info-section {
+    &--no-border {
+      margin-bottom: 56px;
+    }
+
+    & + &--no-border {
+      padding-top: 0;
+      border: unset;
+    }
+  }
+}

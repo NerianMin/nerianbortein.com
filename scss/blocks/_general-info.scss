@@ -1,3 +1,15 @@
+@import "../scss-variables";
+@import "../mixins";
+
 .general-info {
   grid-area: general-info;
+}
+
+@include going-large($breakpoint-small) {
+  .general-info {
+    padding: $spacing $spacing 0 0;
+    border-top: $border;
+    border-right: $border;
+    box-sizing: border-box;
+  }
 }

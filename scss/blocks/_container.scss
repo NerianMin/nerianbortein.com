@@ -13,7 +13,7 @@
   margin: 0;
   box-sizing: border-box;
   max-width: $container-max-width;
-  border-radius: 6px;
+  border-radius: 0;
   background: var(--primary-background-color);
   @include light-drop-shadow();
 }
@@ -29,7 +29,14 @@
 
 @include going-large($breakpoint-medium) {
   .container {
-    border-radius: 0;
+    border-radius: 6px;
     margin: 50px auto 80px;
+  }
+}
+
+@include print() {
+  .container {
+    min-width: 960px;
+    box-shadow: unset;
   }
 }

@@ -1,10 +1,24 @@
 @import "scss-variables";
+@import "mixins";
 
 html {
+  --base-font-size: 12px;
+  --primary-text-color: #000;
+  --light-text-color: #494949;
+  --x-light-text-color: #5d5d5d;
+  --border-color: #d8d8d8;
+  --primary-background-color: #fff;
+  --secondary-background-color: #f2f5fa;
+}
+
+@include going-large($breakpoint-x-small) {
+  html {
+    --base-font-size: 14px;
+  }
+}
+
+@include going-large($breakpoint-small) {
+  html {
     --base-font-size: 16px;
-    --primary-text-color: #000;
-    --light-text-color: #494949;
-    --x-light-text-color: #5d5d5d;
-    --primary-background-color: #fff;
-    --secondary-background-color: #f2f5fa;
+  }
 }

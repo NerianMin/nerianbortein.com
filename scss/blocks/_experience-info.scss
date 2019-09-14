@@ -1,3 +1,14 @@
+@import "../scss-variables";
+@import "../mixins";
+
 .experience-info {
   grid-area: experience-info;
+}
+
+@include going-large($breakpoint-small) {
+  .experience-info {
+    border-top: $border;
+    padding: $spacing 0 0 $spacing;
+    box-sizing: border-box;
+  }
 }
