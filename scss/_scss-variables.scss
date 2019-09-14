@@ -1,4 +1,6 @@
-$container-max-width: 960px;
+$breakpoint-small: 750px;
+$breakpoint-medium: 960px;
+$container-max-width: $breakpoint-medium;
 
 // Colors
 $primary-drop-shadow-color: rgb(186,200,227);

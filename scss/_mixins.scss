@@ -5,3 +5,15 @@
           0 20px 60px 0 adjust-color($primary-drop-shadow-color, $alpha: -0.9),
           0 16px 36px 0 adjust-color($primary-drop-shadow-color, $alpha: -0.7);
 }
+
+@mixin going-large($width) {
+  @media (min-width: $width) {
+    @content;
+  }
+}
+
+@mixin print() {
+  @media print {
+    @content;
+  }
+}

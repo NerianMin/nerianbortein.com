@@ -1,15 +1,29 @@
 .container {
+  display: grid;
+  grid-template-columns: auto;
+  grid-row-gap: 34px;
+  grid-template-areas: "title" "general-info" "experience-info";
   padding: 45px 68px;
-  margin: 50px auto 80px;
+  margin: 0;
   box-sizing: border-box;
   max-width: 960px;
   border-radius: 6px;
   background: var(--primary-background-color);
   box-shadow: 0 20px 60px 0 rgba(186, 200, 227, 0.1), 0 16px 36px 0 rgba(186, 200, 227, 0.3); }
 
+@media (min-width: 750px) {
+  .container {
+    grid-template-columns: minmax(200px, 35%) minmax(300px, 75%);
+    grid-template-areas: "title title" "general-info experience-info"; } }
+
+@media (min-width: 960px) {
+  .container {
+    border-radius: 0;
+    margin: 50px auto 80px; } }
+
 .title {
-  display: flex;
-  margin-bottom: 34px; }
+  grid-area: title;
+  display: flex; }
   .title__credentials {
     flex-grow: 1; }
   .title__name {
@@ -31,3 +45,6 @@
     object-fit: cover;
     object-position: 45%;
     filter: grayscale(0.25) contrast(130%) saturate(120%); }
+
+.general-info {
+  grid-area: general-info; }

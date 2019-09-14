@@ -2,11 +2,34 @@
 @import '../mixins';
 
 .container {
+  display: grid;
+  grid-template-columns: auto;
+  grid-row-gap: 34px;
+  grid-template-areas:
+    "title"
+    "general-info"
+    "experience-info";
   padding: 45px 68px;
-  margin: 50px auto 80px;
+  margin: 0;
   box-sizing: border-box;
   max-width: $container-max-width;
   border-radius: 6px;
   background: var(--primary-background-color);
   @include light-drop-shadow();
+}
+
+@include going-large($breakpoint-small) {
+  .container {
+    grid-template-columns: minmax(200px, 35%) minmax(300px, 75%);
+    grid-template-areas:
+      "title title"
+      "general-info experience-info";
+  }
+}
+
+@include going-large($breakpoint-medium) {
+  .container {
+    border-radius: 0;
+    margin: 50px auto 80px;
+  }
 }

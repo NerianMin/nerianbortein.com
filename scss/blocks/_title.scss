@@ -1,8 +1,8 @@
 @import '../scss-variables';
 
 .title {
+  grid-area: title;
   display: flex;
-  margin-bottom: 34px;
 
   &__credentials {
     flex-grow: 1;
