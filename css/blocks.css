@@ -11,19 +11,18 @@
   background: var(--primary-background-color);
   box-shadow: 0 20px 60px 0 rgba(186, 200, 227, 0.1), 0 16px 36px 0 rgba(186, 200, 227, 0.3); }
 
-@media (min-width: 750px) {
+@media (min-width: 750px), print {
   .container {
     grid-template-columns: minmax(200px, 35%) minmax(300px, 75%);
     grid-template-areas: "title title" "general-info experience-info"; } }
 
-@media (min-width: 960px) {
+@media (min-width: 960px), print {
   .container {
     border-radius: 6px;
     margin: 50px auto 80px; } }
 
 @media print {
   .container {
-    min-width: 960px;
     box-shadow: unset; } }
 
 .title {
@@ -51,7 +50,7 @@
     object-position: 45%;
     filter: grayscale(0.25) contrast(130%) saturate(120%); }
 
-@media (min-width: 450px) {
+@media (min-width: 450px), print {
   .title {
     display: flex; }
     .title__position {
@@ -60,7 +59,7 @@
 .general-info {
   grid-area: general-info; }
 
-@media (min-width: 750px) {
+@media (min-width: 750px), print {
   .general-info {
     padding: 38px 38px 0 0;
     border-top: 2px solid var(--border-color);
@@ -70,7 +69,7 @@
 .experience-info {
   grid-area: experience-info; }
 
-@media (min-width: 750px) {
+@media (min-width: 750px), print {
   .experience-info {
     border-top: 2px solid var(--border-color);
     padding: 38px 0 0 38px;
@@ -139,7 +138,7 @@
     .info-section__list li {
       margin: .25rem; }
 
-@media (min-width: 960px) {
+@media (min-width: 960px), print {
   .info-section--no-border {
     margin-bottom: 56px; }
   .info-section + .info-section--no-border {

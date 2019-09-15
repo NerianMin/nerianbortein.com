@@ -7,7 +7,7 @@
 }
 
 @mixin going-large($width) {
-  @media (min-width: $width) {
+  @media (min-width: $width), print {
     @content;
   }
 }

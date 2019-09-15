@@ -11,8 +11,20 @@ body {
 }
 
 @include print() {
+  @page {
+    margin: 1cm .5cm 1cm;
+  }
+
+  html {
+    font-size: 14px;
+  }
+
   html,
   body {
-    width: 1000px;
+    width: 100%;
+  }
+
+  body {
+    background: var(--primary-background-color);
   }
 }
