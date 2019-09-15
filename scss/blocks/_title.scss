@@ -3,6 +3,7 @@
 
 .title {
   grid-area: title;
+  text-align: center;
 
   &__credentials {
     flex-grow: 1;
@@ -26,8 +27,8 @@
   }
 
   &__image {
-    height: 150px;
-    width: 150px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     object-fit: cover;
     object-position: 45%;
@@ -38,9 +39,15 @@
 @include going-large($breakpoint-x-small) {
   .title {
     display: flex;
+    text-align: left;
 
     &__position {
       margin: 0;
+    }
+
+    &__image {
+      width: 150px;
+      height: 150px;
     }
   }
 }

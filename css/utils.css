@@ -1,0 +1,36 @@
+html {
+  --base-font-size: 12px;
+  --primary-text-color: #000;
+  --light-text-color: #494949;
+  --spacer-color: var(--light-text-color);
+  --x-light-text-color: #5d5d5d;
+  --border-color: #d8d8d8;
+  --primary-background-color: #fff;
+  --secondary-background-color: #f2f5fa; }
+
+@media (min-width: 450px), print {
+  html {
+    --base-font-size: 14px; } }
+
+@media (min-width: 750px), print {
+  html {
+    --base-font-size: 16px; } }
+
+@media print {
+  .break-page-after {
+    break-after: page; } }
+
+.dot-spacing::after {
+  content: '';
+  display: block;
+  width: 3px;
+  height: 3px;
+  color: var(--spacer-color);
+  background: currentColor;
+  border-radius: 3px;
+  box-shadow: 20px 0 0 currentColor, -20px 0 0 currentColor;
+  margin: 30px auto 20px; }
+
+@media (min-width: 450px), print {
+  .dot-spacing::after {
+    display: none; } }

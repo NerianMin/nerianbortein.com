@@ -1,0 +1,31 @@
+@import "../css-variables";
+@import "../scss-variables";
+@import "../mixins";
+
+@include print() {
+  .break-page-after {
+    break-after: page;
+  }
+}
+
+.dot-spacing {
+  &::after {
+    content: '';
+    display: block;
+    width: 3px;
+    height: 3px;
+    color: var(--spacer-color);
+    background: currentColor;
+    border-radius: 3px;
+    box-shadow: 20px 0 0 currentColor, -20px 0 0 currentColor;
+    margin: 30px auto 20px;
+  }
+}
+
+@include going-large($breakpoint-x-small) {
+  .dot-spacing {
+    &::after {
+      display: none;
+    }
+  }
+}
