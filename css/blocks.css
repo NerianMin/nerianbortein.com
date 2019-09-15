@@ -130,10 +130,18 @@
       margin-bottom: 1rem; }
   .info-section__link {
     display: block;
+    padding: 0;
+    border: unset;
+    text-decoration: underline;
     margin-bottom: 1rem;
     font-size: .875rem;
     line-height: 1rem;
-    color: var(--x-light-text-color); }
+    color: var(--x-light-text-color);
+    cursor: pointer; }
+  .info-section__icon {
+    width: 13px;
+    margin-left: 14px;
+    position: absolute; }
   .info-section__contact-link {
     display: block;
     text-decoration: none; }

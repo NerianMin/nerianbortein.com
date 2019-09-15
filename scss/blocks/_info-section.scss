@@ -76,10 +76,20 @@
 
   &__link {
     display: block;
+    padding: 0;
+    border: unset;
+    text-decoration: underline;
     margin-bottom: 1rem;
     font-size: .875rem;
     line-height: 1rem;
     color: var(--x-light-text-color);
+    cursor: pointer;
+  }
+
+  &__icon {
+    width: 13px;
+    margin-left: 14px;
+    position: absolute;
   }
 
   &__contact-link {
