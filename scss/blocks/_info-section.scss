@@ -118,5 +118,11 @@
       padding-top: 0;
       border: unset;
     }
+
+    &__text {
+      p {
+        break-inside: avoid;
+      }
+    }
   }
 }
