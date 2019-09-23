@@ -12,11 +12,13 @@ body {
 
 @include print() {
   @page {
-    margin: 1cm .5cm 1cm;
+    margin: 1.2cm .5cm 1.6cm;
   }
 
   html {
-    font-size: 14px;
+    font-size: 12pt;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
   }
 
   html,
@@ -26,5 +28,9 @@ body {
 
   body {
     background: var(--primary-background-color);
+  }
+
+  a[href^="http"]:after {
+    content: " (" attr(href) ")";
   }
 }

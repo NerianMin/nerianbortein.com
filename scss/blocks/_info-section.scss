@@ -88,7 +88,7 @@
   }
 
   &__icon {
-    width: 13px;
+    height: 16px;
     margin-left: 14px;
     position: absolute;
   }
@@ -119,10 +119,10 @@
       border: unset;
     }
 
-    &__text {
-      p {
-        break-inside: avoid;
-      }
+    p {
+      break-inside: avoid;
+      widows: 2;
+      orphans: 2;
     }
   }
 }

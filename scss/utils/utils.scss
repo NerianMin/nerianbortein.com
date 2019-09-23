@@ -3,8 +3,8 @@
 @import "../mixins";
 
 @include print() {
-  .break-page-after {
-    break-after: page;
+  .break-page {
+    break-before: page;
   }
 }
 
