@@ -13,6 +13,7 @@ body {
 @include print() {
   @page {
     margin: 1.2cm .5cm 1.6cm;
+    size: A4;
   }
 
   html {
@@ -23,7 +24,8 @@ body {
 
   html,
   body {
-    width: 100%;
+    width: 270mm;
+    height: 297mm;
   }
 
   body {
