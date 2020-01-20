@@ -18,6 +18,24 @@
   <title>Artem Senin, Front-end developer</title>
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600&display=swap" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
+  <script>
+    function presentEmploymentDuration() {
+      const SECONDS = 1000; const MINUTES = 3600; const HOURS = 24; const DAYS = 30; const MONTH = 12;
+
+      const startDate = new Date('10/25/2019').getTime();
+      const currentDate = new Date().getTime();
+      const timeDifference = currentDate - startDate;
+      const monthNumberRaw = timeDifference / (SECONDS * MINUTES * HOURS * DAYS);
+      const yearsNumber = parseInt(monthNumberRaw / MONTH, 10);
+      if (yearsNumber > 0) {
+        const restInMonths = parseInt(monthNumberRaw % (yearsNumber * MONTH), 10);
+        return `${yearsNumber} ${yearsNumber > 1 ? 'yrs' : 'yr'}. ${restInMonths} mos.`
+      }
+
+      const monthNumber = Math.ceil(monthNumberRaw);
+      return `${monthNumber} mos.`
+    }
+  </script>
 </head>
 <body>
   <main class="container">
@@ -66,50 +84,45 @@
           <li>SCSS, SASS</li>
           <li>JavaScript</li>
           <li>Git</li>
-          <li>Pug (Jade)</li>
-          <li>Handlebars</li>
         </ul>
         <h4 class="info-section__sub-heading">Skillful</h4>
         <ul class="info-section__list">
-          <li>TypeScript</li>
           <li>Angular 7, 8+</li>
+          <li>TypeScript</li>
           <li>RxJS</li>
-          <li>Redux</li>
+          <li>NgXS</li>
           <li>WordPress</li>
-          <li>Linux (Ubuntu, Arch, Alpine)</li>
         </ul>
-        <h4 class="info-section__sub-heading">Beginner</h4>
+        <h4 class="info-section__sub-heading">Basic Knowledge</h4>
         <ul class="info-section__list">
           <li>React</li>
+          <li>Redux</li>
           <li>MobX</li>
           <li>Webpack</li>
-          <li>Docker</li>
-          <li>NgXS</li>
           <li>PHP</li>
-          <li>MySQL (Maria DB)</li>
+          <li>MySQL</li>
+          <li>Docker</li>
           <li>Nginx</li>
-          <li>Firebase</li>
         </ul>
         <h4 class="info-section__sub-heading">Had experience with</h4>
         <ul class="info-section__list">
-          <li>Emotion</li>
           <li>Vue</li>
+          <li>Emotion</li>
           <li>Stylus</li>
           <li>Node.js</li>
           <li>MongoDB</li>
-          <li>Svelte</li>
           <li>Java (Android)</li>
         </ul>
         <h4 class="info-section__sub-heading">Miscellaneous</h4>
         <ul class="info-section__list">
-          <li>Jira</li>
-          <li>Confluence</li>
-          <li>VSCode</li>
+          <li>Pug (Jade)</li>
+          <li>Handlebars</li>
           <li>WebStorm</li>
-          <li>Adobe Xd</li>
-          <li>Adobe Photoshop</li>
-          <li>Gitlab</li>
           <li>Vim</li>
+          <li>Linux (Ubuntu, Arch, Alpine)</li>
+          <li>Adobe Xd</li>
+          <li>Confluence</li>
+          <li>Jira</li>
         </ul>
       </section>
       <section class="info-section info-section--no-border">
@@ -117,7 +130,7 @@
         <ul class="info-section__list">
           <li>Learning, Reading</li>
           <li>Electric Guitar</li>
-          <li>Table games</li>
+          <li>Table Games</li>
         </ul>
       </section>
     </div>
@@ -125,30 +138,72 @@
       <section class="info-section">
         <h3 class="info-section__heading">Profile</h3>
         <div class="info-section__text info-section__text--long">
-          <p>In my free time I read books, articles, watch talks about web development and anything connected with it.</p>
-          <p>I love to learn new things. Regularly visit conferences and meetups like PiterJS, PiterCSS. Follow the news on youtube channels of HolyJS, Frontend Conf, Angular Connect, listen to podcasts like DevShaht, UnderJS, Frontend Weekend and others. Read papers on Habr and Medium.</p>
-          <p>I have experience with JavaScript/Typescript, React, Angular.</p>
+          <p>I love to learn new things. So I read books for that, watch tutorials. Regularly visit conferences and meetups like PiterJS, PiterCSS. Follow the news on youtube channels of HolyJS, Frontend Conf, Angular Connect. Listen to podcasts like DevShaht, UnderJS, Frontend Weekend and others. Read papers on Habr and Medium.</p>
+          <p>Curious about web development and anything connected with it.</p>
+          <p>I have experience with JavaScript/Typescript, Angular and a bit with React.</p>
           <p>I like to deeply understand things related to work, read documentation and specifications. Love clean, self-documented, thoughtful and maintainable code.</p>
         </div>
       </section>
       <section class="info-section">
         <h3 class="info-section__heading">Work Experience</h3>
         <section class="info-section__group">
+          <h4 class="info-section__sub-heading">Middle Front-end developer, level 2, DINS (DINO SYSTEMS)</h4>
+          <div class="info-section__time">
+            <time class="info-section__date">Oct 2019</time>
+            <span> &ndash; </span>
+            <time class="info-section__date">Present</time>
+            <span class="info-section__duration" aria-label="Duration of employment"><script>document.write(presentEmploymentDuration())</script></span>
+          </div>
+          <div class="info-section__text info-section__text--long">
+            <p>Here I am taking part in developing internal tool for QA engineers (organizing test cases, suites, projects, executions, etc.)</p>
+            <ul>
+              <li>I have implemented Jira Query Language search for our project. Which makes possible to search projects, test cases and use other filters in single query string (example: <code>&quot;Project = 'web' AND summary ~ 'user' OR assignee = 'Username'&quot;</code>). After lexing/parsing this query is transpiled to backend query in JSON format.</li>
+              <li>I am in charge of migrating Angular application from old backend api to updated and rewritten new api.</li>
+            </ul>
+          </div>
+        </section>
+        <section class="info-section__group">
           <h4 class="info-section__sub-heading">Front-end developer, T-Systems</h4>
           <div class="info-section__time">
             <time class="info-section__date">Dec 2018</time>
             <span> &ndash; </span>
-            <time class="info-section__date">Present</time>
+            <time class="info-section__date">Oct 2019</time>
+            <span class="info-section__duration" aria-label="Duration of employment">11 mos</span>
           </div>
           <div class="info-section__text info-section__text--long">
-            <p>Working at T-Systems SPb on mShop project based on Angular framework.</p>
-            <p>I am taking part in the development of pencil selling SPA for Deutsche Telekom, which will help their sellers in the stores to use special application instead of regular paper sheets and reference books.</p>
+            <p>I was taking part in the development of &quot;mShop&quot; a pencil selling SPA for Deutsche Telekom based on Angular, which will help their sellers in the stores to use special application instead of regular paper sheets and reference books.</p>
+            <p>At this position I was in charge of:</p>
+            <ul>
+              <li>Rewriting with my colleague the entire application styles to new adaptive design. We used modern technologies like flexbox, grids instead of old absolute positioned elements.</li>
+              <li>Also my responsibilities included organizing meetings and presentation results of our work to german colleagues.</li>
+              <li>Implementing features on offer page, adding new summary presentation and appearance of customer's options.</li>
+              <li>Participating in bugfixing sprints</li>
+            </ul>
             <p>Due to bad internet connection in shops where it is used and slow backend services this SPA is a fat-client with complex business logic on front-end.</p>
             <p>While implementing new functionality we made constant refactoring and technical debt reduction.</p>
-            <p>I and my colleague were in charge of rewriting entire application styles to adaptive design, and use of modern technologies like flexbox, grids instead of old absolute positioned elements. Also my responsibilities included organizing meetings and presentation results of our work to german colleagues.</p>
           </div>
         </section>
-        <section class="info-section__group break-page">
+        <section class="info-section__group">
+          <h4 class="info-section__sub-heading">Junior Front-end developer, Bandito</h4>
+          <div class="info-section__time">
+            <time class="info-section__date">Nov 2016</time>
+            <span> &ndash; </span>
+            <time class="info-section__date">Sep 2017</time>,
+            <span class="info-section__duration" aria-label="Duration of employment">10 mos</span>
+          </div>
+          <div class="info-section__text info-section__text--long">
+            <p>At this design studio my responsibilities included working on landing pages, corporate sites.</p>
+            <p>I was working with HTML, CSS, SASS, Pure JavaScript. Some projects were handed over after freelancers and required a lot of refinement and refactoring work.</p>
+            <p>Also I introduced git into developing process.</p>
+            <p>I had experience with installing web-sites on WordPress and supporting them.</p>
+            <p>Here are some examples of projects I took part in: <a href="https://adhoc.su/" target="_blank">ADhoc</a>, <a href="https://zverinus.ru/" target="_blank">Zverinus</a>,
+              <a href="https://bandito.band/" target="_blank">Bandito</a>.</p>
+          </div>
+        </section>
+      </section>
+      <section class="info-section">
+        <h3 class="info-section__heading">Teaching experience</h3>
+        <section class="info-section__group">
           <h4 class="info-section__sub-heading">Tutor, Epic Skills</h4>
           <div class="info-section__time">
             <time class="info-section__date">May 2018</time>
@@ -170,24 +225,8 @@
           </div>
           <div class="info-section__text info-section__text--long">
             <p>Courses for children about web development basics.</p>
-            <p>I taught two courses: the basics of Frontend and the basics of Backend development.</p>
-          </div>
-        </section>
-        <section class="info-section__group">
-          <h4 class="info-section__sub-heading">Junior Front-end developer, Bandito</h4>
-          <div class="info-section__time">
-            <time class="info-section__date">Nov 2016</time>
-            <span> &ndash; </span>
-            <time class="info-section__date">Sep 2017</time>,
-            <span class="info-section__duration" aria-label="Duration of employment">10 mos</span>
-          </div>
-          <div class="info-section__text info-section__text--long">
-            <p>At this design studio my responsibilities included working on landing pages, corporate sites.</p>
-            <p>I was working with HTML, CSS, SASS, Pure JavaScript. Some projects were handed over after freelancers and required some refinement and refactoring.</p>
-            <p>Also I introduced git into developing process.</p>
-            <p>I had experience with installing web-sites on WordPress and supporting them.</p>
-            <p>Here are some examples of projects I took part in: <a href="https://adhoc.su/" target="_blank">ADhoc</a>, <a href="https://zverinus.ru/" target="_blank">Zverinus</a>,
-              <a href="https://bandito.band/" target="_blank">Bandito</a>.</p>
+            <p>I taught two courses: the basics of Frontend (Pure HTML, CSS, JavaScript) and the basics of Backend development.</p>
+            <p>I was responsible for the preparation of educational programs and the stream of web-development courses.</p>
           </div>
         </section>
       </section>
@@ -209,7 +248,7 @@
         </section>
       </section>
       <section class="info-section">
-        <h3 class="info-section__heading">Education</h3>
+        <h3 class="info-section__heading">Higher Education</h3>
         <section class="info-section__group">
           <h4 class="info-section__sub-heading">ITMO University</h4>
           <div class="info-section__time info-section__time--small-indent">
@@ -218,6 +257,7 @@
             <time class="info-section__date">2019</time>
           </div>
           <p class="info-section__text">Master, Web-technologies, 4.87</p>
+          <p>Graduated with diploma about reactive programming paradigms in the web and its implementations.</p>
         </section>
         <section class="info-section__group">
           <h4 class="info-section__sub-heading">ITMO University</h4>
@@ -227,16 +267,17 @@
             <time class="info-section__date">2017</time>
           </div>
           <p class="info-section__text">Bachelor, Computer graphics teaching, 4.73</p>
+          <p>Graduated with diploma theme: &quot;Developing of distant learning modules &laquo;CSS and JavaScript&raquo; for children computer education&quot;</p>
         </section>
       </section>
       <section class="info-section break-page">
         <h3 class="info-section__heading">Public speaking</h3>
         <section class="info-section__group">
-          <h4 class="info-section__sub-heading">Vim: выход есть, пути назад нет</h4>
+          <h4 class="info-section__sub-heading">Vim: выход есть, пути назад нет<br><span class="info-section__remark">(eng. Vim: there is exit but no way back)</span></h4>
           <p class="info-section__text">PiterCSS meetup #31 <a href="https://medium.com/pitercss-meetup/31-f8cc85833351" target="_blank">Slides</a></p>
         </section>
         <section class="info-section__group">
-          <h4 class="info-section__sub-heading">Процесс визуализации. Стили и спецификация. Flexbox & Grid. Препроцессоры</h4>
+          <h4 class="info-section__sub-heading">Процесс визуализации. Стили и спецификация. Flexbox &amp; Grid. Препроцессоры<br><span class="info-section__remark">(eng. Rendering pipeline. Styles and specification. Flexbox &amp; Grid. Preprocessors)</span></h4>
           <p class="info-section__text">Front-end school #3, T-Systems <a href="https://docs.google.com/presentation/d/1i7vd9sZrXfFF61tQuKhfF8e9pqDHQZkIwEGwLkBL5J4/edit?usp=sharing" target="_blank">Slides</a></p>
         </section>
       </section>
