@@ -5,10 +5,11 @@
   "homepage": "https://artemeesenin.github.io",
   "main": "index.js",
   "scripts": {
-    "build": "npm run scss -- --output-style compressed",
+    "build": "npm run scss -- --output-style compressed && npm run save-pdf",
+    "save-pdf": "npx http-server ./ -p 3000 & node pdf-gen/index.js && kill $(pgrep http-server)",
     "dev": "npm run scss -- -rw",
     "scss": "node-sass scss/main.scss -o css/",
-    "deploy": "npm run build && git add --all && git commit -m 'deploy' && git push origin master"
+    "deploy": "npm run build && git add --all && git commit -m 'build' && git push origin master"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,8 @@
     "url": "https://github.com/ArtemeeSenin/artemeesenin.github.io/issues"
   },
   "devDependencies": {
-    "node-sass": "^4.12.0"
+    "http-server": "^0.12.1",
+    "node-sass": "^4.12.0",
+    "puppeteer": "^2.0.0"
   }
 }
