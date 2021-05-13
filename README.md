@@ -6,6 +6,6 @@ Phone: +79119042477
 Email: artemee.senin@yandex.ru
 
 
-### Resume 
+### CV 
 
 My experience [in more detail](https://artemeesenin.github.io)

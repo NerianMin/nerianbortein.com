@@ -18,25 +18,7 @@
   <meta name="theme-color" content="#ffffff">
   <title>Artem Senin, Front-end developer</title>
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600&display=swap" rel="stylesheet">
-  <link href="https://artemeesenin.github.io/css/main.css" rel="stylesheet">
-  <script>
-    function presentEmploymentDuration() {
-      const SECONDS = 1000; const MINUTES = 3600; const HOURS = 24; const DAYS = 30; const MONTH = 12;
-
-      const startDate = new Date('10/25/2019').getTime();
-      const currentDate = new Date().getTime();
-      const timeDifference = currentDate - startDate;
-      const monthNumberRaw = timeDifference / (SECONDS * MINUTES * HOURS * DAYS);
-      const yearsNumber = parseInt(monthNumberRaw / MONTH, 10);
-      if (yearsNumber > 0) {
-        const restInMonths = parseInt(monthNumberRaw % (yearsNumber * MONTH), 10);
-        return `${yearsNumber} ${yearsNumber > 1 ? 'yrs' : 'yr'}. ${restInMonths} mos.`
-      }
-
-      const monthNumber = Math.ceil(monthNumberRaw);
-      return `${monthNumber} mos.`
-    }
-  </script>
+  <link href="/css/main.css" rel="stylesheet">
 </head>
 <body>
   <main class="container">
@@ -62,11 +44,10 @@
       <section class="info-section info-section--no-border">
         <h3 class="info-section__heading">Links</h3>
         <a href="https://github.com/ArtemeeSenin" target="_blank" class="info-section__link">GitHub</a>
-        <a href="https://medium.com/@artemee.senin" target="_blank" class="info-section__link">Medium</a>
-        <a href="https://linkedin.com/in/artem-senin-496513175" target="_blank" class="info-section__link">Linked In</a>
-        <a href="https://artemeesenin.github.io/" target="_blank" class="info-section__link">Website</a>
-        <a href="./public/Artem%20Senin,%20Front-end%20developer.pdf" download="Artem Senin, Front-end developer" target="_blank" class="info-section__link hide-on-print">Download CV<object type="image/svg+xml" data="img/file-download.svg" class="info-section__icon" role="presentation"><img src="img/file-download.svg" alt="click to download resume"></object></a>
-        <button onClick="window.print()" class="info-section__link hide-on-print">Print CV<object type="image/svg+xml" data="img/print.svg" class="info-section__icon" role="presentation"><img src="img/print.svg" alt="click to print resume"></object></button>
+        <a href="https://artemee-senin.medium.com" target="_blank" class="info-section__link">Medium</a>
+        <a href="https://linkedin.com/in/artem-senin-496513175" target="_blank" class="info-section__link">LinkedIn</a>
+        <a href="./public/Artem%20Senin,%20Front-end%20developer.pdf" download="Artem Senin, Front-end developer" target="_blank"  class="info-section__link hide-on-print">Download CV<img src="img/file-download.svg" class="info-section__icon" alt="click to download CV"></a>
+        <button onClick="window.print()" class="info-section__link hide-on-print">Print CV<img src="img/print.svg" class="info-section__icon" alt="click to print CV"></button>
       </section>
       <section class="info-section info-section--no-border">
         <h3 class="info-section__heading">Languages</h3>
@@ -77,22 +58,20 @@
         </div>
       </section>
       <section class="info-section info-section--no-border">
-        <h3 class="info-section__heading break-page">Skills</h3>
+        <h3 class="info-section__heading">Skills</h3>
         <h4 class="info-section__sub-heading">Experienced</h4>
         <ul class="info-section__list">
           <li>HTML</li>
           <li>CSS</li>
-          <li>SCSS, SASS</li>
           <li>JavaScript</li>
-          <li>Git</li>
+          <li>TypeScript</li>
+          <li>Angular</li>
         </ul>
         <h4 class="info-section__sub-heading">Skillful</h4>
         <ul class="info-section__list">
-          <li>Angular 7, 8+</li>
-          <li>TypeScript</li>
+          <li>SCSS, SASS</li>
           <li>RxJS</li>
-          <li>NgXS</li>
-          <li>WordPress</li>
+          <li>NGXS</li>
         </ul>
         <h4 class="info-section__sub-heading">Basic Knowledge</h4>
         <ul class="info-section__list">
@@ -102,35 +81,20 @@
           <li>Webpack</li>
           <li>Jasmine</li>
           <li>Jest</li>
-          <li>Cypress</li>
           <li>Node.js</li>
           <li>PHP</li>
           <li>MySQL</li>
+          <li>MongoDB</li>
           <li>Docker</li>
           <li>Nginx</li>
+          <li>Bash</li>
+          <li>Linux (Ubuntu, Arch, Alpine)</li>
         </ul>
         <h4 class="info-section__sub-heading">Had experience with</h4>
         <ul class="info-section__list">
-          <li>Vue</li>
-          <li>Emotion</li>
-          <li>Stylus</li>
-          <li>Node.js</li>
-          <li>MongoDB</li>
-          <li>Puppeteer</li>
-          <li>Java (Android)</li>
-        </ul>
-        <h4 class="info-section__sub-heading">Miscellaneous</h4>
-        <ul class="info-section__list">
-          <li>Pug (Jade)</li>
-          <li>Handlebars</li>
-          <li>WebStorm</li>
-          <li>Wallaby</li>
-          <li>Quokka</li>
-          <li>Vim</li>
-          <li>Linux (Ubuntu, Arch, Alpine)</li>
-          <li>Adobe Xd</li>
-          <li>Confluence</li>
-          <li>Jira</li>
+          <li>Vue.js</li>
+          <li>Cypress</li>
+          <li>JSDoc</li>
         </ul>
       </section>
       <section class="info-section info-section--no-border">
@@ -138,7 +102,7 @@
         <ul class="info-section__list">
           <li>Learning, Reading</li>
           <li>Electric Guitar</li>
-          <li>Table Games</li>
+          <li>Board Games</li>
         </ul>
       </section>
     </div>
@@ -146,32 +110,43 @@
       <section class="info-section">
         <h3 class="info-section__heading">Profile</h3>
         <div class="info-section__text info-section__text--long">
-          <p>I love to learn new things. So I read books for that, watch tutorials. Regularly visit conferences and meetups like PiterJS, PiterCSS. Follow the news on youtube channels of HolyJS, Frontend Conf, Angular Connect. Listen to podcasts like DevShaht, UnderJS, Frontend Weekend and others. Read papers on Habr and Medium.</p>
-          <p>Curious about web development and anything connected with it.</p>
-          <p>I have experience with JavaScript/Typescript, Angular and a bit with React.</p>
-          <p>I like to deeply understand things related to work, read documentation and specifications. Love clean, self-documented, thoughtful and maintainable code.</p>
+          <p>I like to solve complex tasks, for example: component for test cases search with Jira Query Language.</p>
+          <p>Interested in continuous self development and professional growth. Follow industry trends through visiting meetups and conferences, listening to podcasts and reading articles on medium. I had prepared some talks myself: about Vim usage, rendering pipeline. From time to time write articles on medium.</p>
+          <p>I like to deeply understand things related to work, read documentation and specifications. Love clean, self-documented code.</p>
         </div>
       </section>
       <section class="info-section">
         <h3 class="info-section__heading">Work Experience</h3>
         <section class="info-section__group">
-          <h4 class="info-section__sub-heading">Middle Front-end developer, level 2, DINS (DINO SYSTEMS)</h4>
+          <h4 class="info-section__sub-heading">Senior Front-end developer @ DINS (RingCentral) </h4>
           <div class="info-section__time">
             <time class="info-section__date">Oct 2019</time>
             <span> &ndash; </span>
             <time class="info-section__date">Present</time>
-            <span class="info-section__duration" aria-label="Duration of employment"><script>document.write(presentEmploymentDuration())</script></span>
+            <span class="info-section__duration" aria-label="Duration of employment">1 yr. 8 mos.</span>
           </div>
           <div class="info-section__text info-section__text--long">
-            <p>Here I am taking part in developing internal tool for QA engineers (organizing test cases, suites, projects, executions, etc.)</p>
+            <p>Here I am currently working on internal tool for rollouts and teams planning.</p>
+            <p>At this position I am in charge of:</p>
             <ul>
-              <li>I have implemented Jira Query Language search for our project. Which makes possible to search projects, test cases and use other filters in single query string (example: <code>&quot;Project = 'web' AND summary ~ 'user' OR assignee = 'Username'&quot;</code>). After lexing/parsing this query is transpiled to backend query in JSON format.</li>
-              <li>I am in charge of migrating Angular application from old backend api to updated and rewritten new api.</li>
+              <li><b>Supporting configurations</b> for RC programs on project wizard creation (which steps to show, default states of input controls, filtering based on programs)</li>
+              <li>Applying new design to some pages of our application</li>
+              <li>Creation of structural directive to conditionally hide and show ui elements based on user settings (for example table columns)</li>
+              <li>Doing code review of front-end requests</li>
+            </ul>
+            <p>For the first year I was working on internal tool for QA (it allows to store test cases, requirements, execute test plan runs and create reports).</p>
+            <ul>
+              <li>I have <b>implemented Jira Query Language search with autocomplete</b> for our project. Which makes possible to search projects, test cases and use other filters in single query string (for example: &quot;project = web and status not in (failed, warning)&quot;). After lexing/parsing this query is transpiled to backend query in JSON format. Now this component is shared across both projects in our department.</li>
+              <li>I was in charge of migrating Angular application from old backend api to updated and rewritten new api</li>
+              <li>Did a lot of refactoring of tree sidebar component which allows user to display test cases in different modes (tree, table, group) and is widely used across whole application. And implemented statistics of test case execution to be displayed for each node in this tree</li>
+              <li>Initiated NGXS data mutations analysis and future refactoring</li>
+              <li>Introduced webhook for new merge requests notifications from GitLab</li>
+              <li>Investigation and preparation of rules and code style for application styles</li>
             </ul>
           </div>
         </section>
         <section class="info-section__group">
-          <h4 class="info-section__sub-heading">Front-end developer, T-Systems</h4>
+          <h4 class="info-section__sub-heading">Front-end developer @ T-Systems</h4>
           <div class="info-section__time">
             <time class="info-section__date">Dec 2018</time>
             <span> &ndash; </span>
@@ -180,19 +155,18 @@
           </div>
           <div class="info-section__text info-section__text--long">
             <p>I was taking part in the development of &quot;mShop&quot; an SPA for Deutsche Telekom based on Angular, which will help their sellers in the stores to use special application instead of regular paper sheets and reference books.</p>
+            <p>Due to bad internet connection in shops where it is used and slow backend services this SPA is a fat-client with complex business logic on front-end.</p>
             <p>At this position I was in charge of:</p>
             <ul>
-              <li>Rewriting with my colleague the entire application styles to new adaptive design. We used modern technologies like flexbox, grids instead of old absolute positioned elements.</li>
-              <li>Also my responsibilities included organizing meetings and presentation results of our work to german colleagues.</li>
-              <li>Implementing features on offer page, adding new summary presentation and appearance of customer's options.</li>
-              <li>Participating in bugfixing sprints</li>
+              <li>Rewriting with my colleague the <b>entire application styles to new adaptive design</b>. We used modern technologies like flexbox, grids instead of old absolute positioned elements</li>
+              <li>Also my responsibilities included organizing meetings and presentation results of our work to german colleagues</li>
+              <li>Implementing features on offer page, adding new summary presentation and appearance of customer's options</li>
+              <li>While implementing new functionality we made constant refactoring and bugfixing</li>
             </ul>
-            <p>Due to bad internet connection in shops where it is used and slow backend services this SPA is a fat-client with complex business logic on front-end.</p>
-            <p>While implementing new functionality we made constant refactoring and technical debt reduction.</p>
           </div>
         </section>
         <section class="info-section__group">
-          <h4 class="info-section__sub-heading">Junior Front-end developer, Bandito</h4>
+          <h4 class="info-section__sub-heading">Junior Front-end developer @ Bandito</h4>
           <div class="info-section__time">
             <time class="info-section__date">Nov 2016</time>
             <span> &ndash; </span>
@@ -206,6 +180,17 @@
             <p>I had experience with installing web-sites on WordPress and supporting them.</p>
             <p>Here are some examples of projects I took part in: <a href="https://adhoc.su/" target="_blank">ADhoc</a>, <a href="https://zverinus.ru/" target="_blank">Zverinus</a>,
               <a href="https://bandito.band/" target="_blank">Bandito</a>.</p>
+          </div>
+        </section>
+      </section>
+      <section class="info-section">
+        <h3 class="info-section__heading">Projects</h3>
+        <section class="info-section__group">
+          <h4 class="info-section__sub-heading">ngx-detach-invisible</h4>
+          <div class="info-section__text info-section__text--long">
+            <p>I have developed a <a href="https://github.com/ArtemeeSenin/ngx-detach-invisible/blob/master/packages/ngx-detach-invisible/README.md">directive for Angular</a> that detaches component from change detection if that component is not visible in view port.</p>
+            <p>This can be used as an optimization for components which have heavy calculations in templates which are not memoized or as for projects which use default change detection strategy and do not want to use onPush for some reason on similar hard to render components.</p>
+            <p>Currently this project is more like a proof of concept and I plan to work on it more in future</p>
           </div>
         </section>
       </section>
@@ -233,12 +218,12 @@
           </div>
           <div class="info-section__text info-section__text--long">
             <p>Courses for children about web development basics.</p>
-            <p>I taught two courses: the basics of Frontend (Pure HTML, CSS, JavaScript) and the basics of Backend development.</p>
-            <p>I was responsible for the preparation of educational programs and the stream of web-development courses.</p>
+            <p>I was leading the stream of web-development courses and was in charge of educational programs preparation.</p>
+            <p>I taught two courses: the basics of Frontend (Pure HTML, CSS, JavaScript, jQuery, Bootstrap) and the basics of Backend development (PHP, MySQL, Wordpress).</p>
           </div>
         </section>
       </section>
-      <section class="info-section break-page">
+      <section class="info-section">
         <h3 class="info-section__heading">Courses</h3>
         <section class="info-section__group">
           <h4 class="info-section__sub-heading">Front-end school #1, T-Systems</h4>
@@ -281,12 +266,20 @@
       <section class="info-section">
         <h3 class="info-section__heading">Public speaking</h3>
         <section class="info-section__group">
+          <h4 class="info-section__sub-heading">Jira-like search? Easy</h4>
+          <p class="info-section__text">Public talk at DINS <a href="https://docs.google.com/presentation/d/11dv3bmaBRlVX_jHiVqIDDdXOwUNYP0zqLERyHkfJSyk/edit?usp=sharing" target="_blank">Slides</a></p>
+        </section>
+        <section class="info-section__group">
           <h4 class="info-section__sub-heading">Vim: выход есть, пути назад нет<br><span class="info-section__remark">(eng. Vim: there is exit but no way back)</span></h4>
           <p class="info-section__text">PiterCSS meetup #31 <a href="https://medium.com/pitercss-meetup/31-f8cc85833351" target="_blank">Slides</a></p>
         </section>
         <section class="info-section__group">
           <h4 class="info-section__sub-heading">Процесс визуализации. Стили и спецификация. Flexbox &amp; Grid. Препроцессоры<br><span class="info-section__remark">(eng. Rendering pipeline. Styles and specification. Flexbox &amp; Grid. Preprocessors)</span></h4>
           <p class="info-section__text">Front-end school #3, T-Systems <a href="https://docs.google.com/presentation/d/1i7vd9sZrXfFF61tQuKhfF8e9pqDHQZkIwEGwLkBL5J4/edit?usp=sharing" target="_blank">Slides</a></p>
+        </section>
+        <section class="info-section__group">
+          <h4 class="info-section__sub-heading">Git basics for QA engineers</h4>
+          <p class="info-section__text">Talk at T-Systems <a href="https://docs.google.com/presentation/d/1U2IEYuDFocqmpvTl7WxRLUmnCVVpHKj6coNihf1aJZA/edit?usp=sharing" target="_blank">Slides</a></p>
         </section>
       </section>
     </div>
