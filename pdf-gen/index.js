@@ -23,7 +23,7 @@ async function generatePDF() {
 }
 
 async function savePDF() {
-  return fs.writeFile(path.resolve(__dirname, '../public/Artem Senin, Front-end developer.pdf'), await generatePDF(), () => {
+  return fs.writeFile(path.resolve(__dirname, '../public/Artem Senin, Senior Front-end Developer.pdf'), await generatePDF(), () => {
   });
 }
 

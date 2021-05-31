@@ -25,7 +25,7 @@
     <header class="title dot-spacing">
       <div class="title__credentials">
         <h1 class="title__name">Artem<br>Senin</h1>
-        <h2 class="title__position">Front-end Developer</h2>
+        <h2 class="title__position">Senior Front-end Developer</h2>
       </div>
       <img class="title__image" src="img/avatar.jpg" alt="Artem Senin, Front-end developer, picture">
     </header>
@@ -46,7 +46,7 @@
         <a href="https://github.com/ArtemeeSenin" target="_blank" class="info-section__link">GitHub</a>
         <a href="https://artemee-senin.medium.com" target="_blank" class="info-section__link">Medium</a>
         <a href="https://linkedin.com/in/artem-senin-496513175" target="_blank" class="info-section__link">LinkedIn</a>
-        <a href="./public/Artem%20Senin,%20Front-end%20developer.pdf" download="Artem Senin, Front-end developer" target="_blank"  class="info-section__link hide-on-print">Download CV<img src="img/file-download.svg" class="info-section__icon" alt="click to download CV"></a>
+        <a href="./public/Artem%20Senin,%20Senior%20Front-end%20Developer.pdf" download="Artem Senin, Front-end developer" target="_blank"  class="info-section__link hide-on-print">Download CV<img src="img/file-download.svg" class="info-section__icon" alt="click to download CV"></a>
         <button onClick="window.print()" class="info-section__link hide-on-print">Print CV<img src="img/print.svg" class="info-section__icon" alt="click to print CV"></button>
       </section>
       <section class="info-section info-section--no-border">
@@ -111,7 +111,7 @@
       <section class="info-section">
         <h3 class="info-section__heading">Profile</h3>
         <div class="info-section__text info-section__text--long">
-          <p>I have strong knowledge of Angular and TypeScript. Also I like to deeply understand technologies I work with, that's why I read documentation and specifications, source code of used libraries. I feel confident working with TypeScript, SCSS. And I have solid understanding of basic web technologies like HTML, CSS, JS.</p>
+          <p>I have strong knowledge of Angular and TypeScript and basic React knowledge. Also I like to deeply understand technologies I work with, that's why I read documentation and specifications, source code of used libraries. I feel confident working with TypeScript, SCSS. And I have solid understanding of basic web technologies like HTML, CSS, JS.</p>
           <p>I like to solve complex tasks, for example, component for test cases search based on Jira Query Language.</p>
           <p>I am interested in continuous self-development and professional growth, follow industry trends by visiting meetups and conferences, listening to podcasts and reading articles on Medium. I also prepared some talks by myself: about Vim usage, rendering pipeline. From time to time I write articles on medium.</p>
         </div>
@@ -124,31 +124,25 @@
             <time class="info-section__date">Oct 2019</time>
             <span> &ndash; </span>
             <time class="info-section__date">Present</time>
-            <span class="info-section__duration" aria-label="Duration of employment">1 yr. 8 mos.</span>
+            <span class="info-section__duration" aria-label="Duration of employment">1 yr. 9 mos.</span>
           </div>
           <div class="info-section__text info-section__text--long">
             <p>I currently work on internal tool for rollouts and teams planning.</p>
             <p>Stack: Angular, NGXS, Angular Material</p>
-            <p>At this position I am in charge of:</p>
+            <p>I implemented Jira Query Language search with autocomplete which provides possibility to search for projects, test cases and to use other filters in single query string. Now this component is shared across both projects in our department</p>
+            <p>Did a lot of refactoring of tree sidebar component which allows user to display test cases in different modes (tree, table, group) and is widely used across whole application. I also added statistics of test case execution for each node in this tree</p>
+            <p>I was also in charge of:</p>
             <ul>
-              <li>Applying new design to some pages of our application</li>
-              <li>Doing code review of front-end requests</li>
-              <li>Regularly participate in interviewing for our open front-end positions</li>
+              <li>Applied new design to some pages of our application</li>
+              <li><b>Supported configurations</b> for RC programs on project creation wizard</li>
+              <li>Doing <b>code review</b> of front-end requests</li>
+              <li>Regularly <b>participate in interviewing</b> for our open front-end positions</li>
+              <li>Initiated NGXS data mutations analysis and did future refactoring</li>
+              <li>Introduced webhook for new merge requests notifications from GitLab (with Node.js and Express)</li>
+              <li>Refactored CI pipeline step from JS to Linux utils with Bash, which <b>reduced build time by <strong>4-5 minutes</strong></b></li>
+              <li>Investigated and prepared of rules and code style for writing application styles</li>
             </ul>
-            <p><b>Supported configurations</b> for RC programs on project creation wizard (which steps to show, default states of input controls, filtering based on programs)</p>
-            <li>Created a structural directive, which allows to conditionally hide and show ui elements based on user settings (for example table columns)</li>
-              
-            <p>During the first year I worked on an internal tool for QA (it allows to store test cases, requirements, execute test plan runs and create reports).</p>
-            <ul>
-              <li>I <b>implemented Jira Query Language search with autocomplete</b> for our project. 
-                It provides possibility to search for projects, test cases and to use other filters in single query string (for instance &laquo;Project = Web AND Satus NOT IN (Failed, Warning)&raquo;). After lexing/parsing this query is transpiled to backend request in JSON format. Now this component is shared across both projects in our department.</li>
-              <li>I was in charge of migrating Angular application from old backend API to updated and rewritten new API</li>
-              <li>Did a lot of refactoring of tree sidebar component which allows user to display test cases in different modes (tree, table, group) and is widely used across whole application. 
-                I also implemented displayment of statistics of test case execution for each node in this tree</li>
-              <li>I initiated NGXS data mutations analysis and did future refactoring</li>
-              <li>I introduced webhook for new merge requests notifications from GitLab (with Node.js and Express)</li>
-              <li>Investigated and preparated of rules and code style for writing application styles</li>
-            </ul>
+            <p>For the first year I worked on an internal tool for QA (it allows to store test cases, requirements, execute test plan runs and create reports). On the same stack: Angular, NGXS</p>
           </div>
         </section>
         <section class="info-section__group">
@@ -164,12 +158,11 @@
             <p>Stack: Angular, NGXS</p>
             <p>At this position I was in charge of:</p>
             <ul>
-              <li>Rewriting the <b>entire application styles to new adaptive design</b> with my colleague. We used modern technologies like flexbox and grids instead of old absolute positioned elements</li>
-              <li>Organizing meetings regarding the progress of our work to german colleagues</li>
+              <li>Rewriting the <b>entire application styles to new adaptive design</b> with my colleague</li>
+              <li>Leading meetings regarding the progress of our redesign work to german colleagues</li>
               <li>Implementing features on offer page, adding new summary presentation and appearance of customer's options</li>
-             </ul>
-            <p>While implementing new functionality we did constant refactoring and bugfixing</p>
-            
+              <li>Covering fixed bugs with unit tests</li>
+            </ul>
           </div>
         </section>
         <section class="info-section__group">
