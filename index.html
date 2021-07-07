@@ -18,7 +18,7 @@
   <meta name="theme-color" content="#ffffff">
   <title>Artem Senin, Front-end developer</title>
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600&display=swap" rel="stylesheet">
-  <link href="/css/main.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
   <main class="container">
@@ -124,7 +124,7 @@
             <time class="info-section__date">Oct 2019</time>
             <span> &ndash; </span>
             <time class="info-section__date">Present</time>
-            <span class="info-section__duration" aria-label="Duration of employment">1 yr. 9 mos.</span>
+            <span class="info-section__duration" aria-label="Duration of employment" id="current-work-duration"></span>
           </div>
           <div class="info-section__text info-section__text--long">
             <p>I currently work on internal tool for rollouts and teams planning.</p>
@@ -286,5 +286,19 @@
   </main>
   <script src="/js/metrics.js" defer></script>
   <noscript><div><img src="https://mc.yandex.ru/watch/78452955" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <script defer>
+    function dateDiff(start, end) {
+      const timeDiff = new Date(end - start);
+      const MONTH_COUNT_FROM_ONE = 1;
+      return {
+        years: timeDiff.getFullYear() - new Date(0).getFullYear(),
+        months: timeDiff.getMonth() + MONTH_COUNT_FROM_ONE,
+        days: timeDiff.getDay()
+      }
+    }
+    const currentWorkplaceDuration = dateDiff(new Date('October 2019'), new Date());
+    const currentWorkplaceDurationEl = document.querySelector('#current-work-duration');
+    currentWorkplaceDurationEl.textContent = `${currentWorkplaceDuration.years} yr. ${currentWorkplaceDuration.months} mos.`;
+  </script>
 </body>
 </html>
