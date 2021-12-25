@@ -1,5 +1,5 @@
 const PORT = 3000;
-const fs = require('fs');
+const fs = require('fs').promises;
 const path = require('path');
 const puppeteer = require('puppeteer');
 
@@ -23,9 +23,8 @@ async function generatePDF() {
 }
 
 async function savePDF() {
-  return fs.writeFile(path.resolve(__dirname, '../public/Artem Senin, Senior Front-end Developer.pdf'), await generatePDF(), () => {
-  });
+  return fs.writeFile(path.resolve(__dirname, '../public/Artem Senin, Senior Frontend Developer.pdf'), await generatePDF());
 }
 
-savePDF().then(() => console.log('Successfully saved')).catch(err => console.error(err));
+savePDF().then(() => console.log('Successfully saved')).catch(console.error);
 
