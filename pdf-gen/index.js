@@ -23,7 +23,7 @@ async function generatePDF() {
 }
 
 async function savePDF() {
-  return fs.writeFile(path.resolve(__dirname, '../public/Artem Senin, Senior Frontend Developer.pdf'), await generatePDF());
+  return fs.writeFile(path.resolve(__dirname, '../public/Artem Lemann, Senior Frontend Developer.pdf'), await generatePDF());
 }
 
 savePDF().then(() => console.log('Successfully saved')).catch(console.error);
