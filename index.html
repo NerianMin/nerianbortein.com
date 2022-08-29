@@ -16,7 +16,7 @@
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="msapplication-config" content="img/browserconfig.xml">
   <meta name="theme-color" content="#ffffff">
-  <title>Artemiy Lemann, Sr. Frontend Developer</title>
+  <title>Artemii Lemann, Sr. Frontend Developer</title>
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600&display=swap" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
 </head>
@@ -136,7 +136,6 @@
           <div class="info-section__text info-section__text--long">
             <p>I've introduced feature flags as intermediate step to full ui customisation for clients. This allowed us to reduce copy/paste and scale better with regular Angular components.</p>
             <p>I act as a frontend sub-lead, own epics and push them to delivery.</p>
-            <p>During this period I also was participating in variety of products made in React with styled components and graphql</p>
           </div>
         </section>
         <section class="info-section__group">
@@ -148,12 +147,12 @@
             <span class="info-section__duration" aria-label="Duration of employment">1 yr 11 mos</span>
           </div>
           <div class="info-section__text info-section__text--long">
-            <p>I implemented Jira Query Language search with autocomplete which provides ability to search projects, test cases and to use other filters <b>in single query string</b>. Now this component is shared across both projects in our department</p>
+            <p>I implemented Jira Query Language search with autocomplete to search test cases by filters <b>in single query string</b></p>
             <ul>
               <li><b>Applied new design</b> to many pages of our application</li>
               <li>Initiated NGXS data mutations analysis and did subsequent refactoring</li>
-              <li>Refactored CI pipeline step from JS to Linux utils with Bash, which <b>reduced build time by <strong>4-5 minutes</strong></b></li>
-              <li>Investigated and prepared of rules and code style for writing application styles</li>
+              <li>Refactored CI pipelines from JS to Linux utils with Bash, which <b>reduced build time by <strong>4-5 minutes</strong></b></li>
+              <li>Prepared guide and code style for writing application styles</li>
             </ul>
           </div>
         </section>
@@ -169,7 +168,7 @@
             <p>I took part in the development of SPA for sellers in offline stores. Due to bad internet connection in shops this SPA was a fat-client with complex business logic on front-end.</p>
             <ul>
               <li>Rewriting the <b>entire application styles to new adaptive design</b> with my colleague</li>
-              <li>Leading meetings regarding the progress of our redesign work</li>
+              <li>Leading meetings in english regarding the progress of our redesign work</li>
               <li>Supported admin dashboard in Vue.js</li>
             </ul>
           </div>
@@ -315,10 +314,10 @@
     const currentWorkplaceDurationEl = document.querySelector('#current-work-duration');
     let text = '';
     if (currentWorkplaceDuration.years > 0) {
-      text += `${currentWorkplaceDuration.years} yr.`;
+      text += `${currentWorkplaceDuration.years} yr `;
     }
     if (currentWorkplaceDuration.months > 0) {
-      text += `${currentWorkplaceDuration.months} mos.`;
+      text += `${currentWorkplaceDuration.months} mos `;
     }
     
     currentWorkplaceDurationEl.textContent = text;
