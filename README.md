@@ -1,9 +1,9 @@
-# Artemiy Lemann
-## Front-end Developer
+# Artemii Lemann
+## Senior Front-end Developer
 
-Phone: +79119042477
+Phone: +48889747628
 
-Email: artemee.lemann@yandex.ru
+Email: artemee.lemann@gmail.com
 
 
 ### CV 
