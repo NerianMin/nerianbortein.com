@@ -23,7 +23,7 @@ async function generatePDF() {
 }
 
 async function savePDF() {
-  return fs.writeFile(path.resolve(__dirname, '../public/artemii-lemann-senior-fe.pdf'), await generatePDF());
+  return fs.writeFile(path.resolve(__dirname, '../public/nerian-bortein-lead-exp-designer.pdf'), await generatePDF());
 }
 
 savePDF().then(() => console.log('Successfully saved')).catch(console.error);

@@ -1,8 +1,8 @@
 {
-  "name": "artemeesenin.github.io",
+  "name": "bortein.com",
   "version": "1.0.0",
   "description": "CV",
-  "homepage": "https://artemeesenin.github.io",
+  "homepage": "https://bortein.com",
   "main": "index.js",
   "scripts": {
     "run-all": "npm-run-all",
@@ -16,12 +16,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ArtemeeSenin/artemeesenin.github.io.git"
+    "url": "git+https://github.com/NerianMin/bortein.com.git"
   },
-  "author": "Artem Senin",
+  "author": "Nerian Bortein",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ArtemeeSenin/artemeesenin.github.io/issues"
+    "url": "https://github.com/NerianMin/bortein.com/issues"
   },
   "devDependencies": {
     "http-server": "^14.0.0",
