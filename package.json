@@ -24,9 +24,9 @@
     "url": "https://github.com/NerianMin/bortein.com/issues"
   },
   "devDependencies": {
-    "http-server": "^14.0.0",
-    "node-sass": "^7.0.0",
-    "puppeteer": "^13.0.1"
+    "http-server": "^14.1.1",
+    "puppeteer": "^23.9.0",
+    "sass": "^1.81.1"
   },
   "dependencies": {
     "npm-run-all": "^4.1.5"
